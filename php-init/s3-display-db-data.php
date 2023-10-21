@@ -1,6 +1,6 @@
 <?php
 
-require("s6-db-dry.php");
+require("includes/s6-db-dry.php");
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
@@ -25,7 +25,7 @@ if ($result === false) {
 
 ?>
 
-<?php require('header.php'); ?>
+<?php require('includes/header.php'); ?>
 
 <?php
 if (empty($articles)): ?>
@@ -46,4 +46,4 @@ if (empty($articles)): ?>
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
-<?php require('footer.php'); ?>
+<?php require('includes/footer.php'); ?>

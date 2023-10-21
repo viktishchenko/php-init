@@ -41,3 +41,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 [extract repeated code →][def4]
 
 [def4]: ../s6-db-dry.php
+
+[deny access →][def6]
+
+![Alt text](img/denyAccess.png)
+
+[def6]: ../includes/.htaccess

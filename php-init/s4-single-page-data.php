@@ -1,7 +1,7 @@
 <?php
 
 // require("s6-db-dry.php");
-include("s6-db-dry.php");
+include("includes/s6-db-dry.php");
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
@@ -33,7 +33,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
 ?>
 
-<?php require('header.php'); ?>
+<?php require('includes/header.php'); ?>
 <?php
 if ($article === null): ?>
     <p>No article found.</p>
@@ -52,4 +52,4 @@ if ($article === null): ?>
     </ul>
 <?php endif; ?>
 
-<?php require('footer.php'); ?>
+<?php require('includes/footer.php'); ?>
