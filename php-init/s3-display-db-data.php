@@ -22,6 +22,7 @@ if (mysqli_connect_error()) {
 
 $sql = "SELECT *
   FROM article
+  WHERE id = 0
   ORDER BY created_at;";
 
 $result = mysqli_query($conn, $sql);
@@ -49,16 +50,21 @@ if ($result === false) {
         <h1>My Blog</h1>
     </header>
     <main>
-        <ul>
-            <?php foreach ($articles as $article) : ?>
-                <li>
-                    <article>
-                        <h2><?= $article["title"]; ?></h2>
-                        <p><?= $article["content"]; ?></p>
-                    </article>
-                </li>
-            <?php endforeach; ?>
-        </ul>
+        <?php
+        if (empty($articles)) : ?>
+            <p>No articles found.</p>
+        <?php else : ?>
+            <ul>
+                <?php foreach ($articles as $article) : ?>
+                    <li>
+                        <article>
+                            <h2><?= $article["title"]; ?></h2>
+                            <p><?= $article["content"]; ?></p>
+                        </article>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
     </main>
 </body>
 
