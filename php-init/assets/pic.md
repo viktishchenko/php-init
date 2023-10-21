@@ -23,6 +23,13 @@ $sql = "SELECT *
 
 ![Alt text](img/queryString.png)
 
+```php
+// TO AVOID SQL INJECTION!!!
+// validate id's passed in from Query String!!!
+// check id's set (hide err msg abt id's) && number
+if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+```
+
 ![Alt text](img/singlePageData2.png)
 
 [def3]: ../s5-querystring.php
