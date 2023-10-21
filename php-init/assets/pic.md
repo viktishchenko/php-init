@@ -30,6 +30,14 @@ $sql = "SELECT *
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 ```
 
+[avoid sql injection validate incoming data →][def5]
+
+[def5]: ../s4-single-page-data.php
+
 ![Alt text](img/singlePageData2.png)
 
 [def3]: ../s5-querystring.php
+
+[extract repeated code →][def4]
+
+[def4]: ../s6-db-dry.php

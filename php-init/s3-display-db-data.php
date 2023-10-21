@@ -1,16 +1,6 @@
 <?php
 
-$db_host = "localhost";
-$db_name = "myfirst_php_db";
-$db_user = "myfirst_start";
-$db_pass = "grRDVPJBOmm-6FMj";
-
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-
-if (mysqli_connect_error()) {
-    echo mysqli_connect_error();
-    exit;
-}
+require("s6-db-dry.php");
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
@@ -35,37 +25,25 @@ if ($result === false) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php require('header.php'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blog</title>
-    <link rel="shortcut icon" href="#">
-</head>
-
-<body>
-    <header>
-        <h1>My Blog</h1>
-    </header>
-    <main>
-        <?php
-        if (empty($articles)) : ?>
-            <p>No articles found.</p>
-        <?php else : ?>
-            <ul>
-                <?php foreach ($articles as $article) : ?>
-                    <li>
-                        <article>
-                            <h2><a href="s4-single-page-data.php?id=<?= $article['id']; ?>"><?= $article["title"]; ?></a></h2>
-                            <p><?= $article["content"]; ?></p>
-                        </article>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        <?php endif; ?>
-    </main>
-</body>
-
-</html>
+<?php
+if (empty($articles)): ?>
+    <p>No articles found.</p>
+<?php else: ?>
+    <ul>
+        <?php foreach ($articles as $article): ?>
+            <li>
+                <article>
+                    <h2><a href="s4-single-page-data.php?id=<?= $article['id']; ?>">
+                            <?= $article["title"]; ?>
+                        </a></h2>
+                    <p>
+                        <?= $article["content"]; ?>
+                    </p>
+                </article>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
+<?php require('footer.php'); ?>
