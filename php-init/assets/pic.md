@@ -18,3 +18,11 @@ $sql = "SELECT *
 ![Alt text](img/singlePageData.png)
 
 [def2]: ../s4-single-page-data.php
+
+[query string →][def3]
+
+![Alt text](img/queryString.png)
+
+![Alt text](img/singlePageData2.png)
+
+[def3]: ../s5-querystring.php

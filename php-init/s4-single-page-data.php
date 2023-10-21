@@ -22,8 +22,7 @@ if (mysqli_connect_error()) {
 
 $sql = "SELECT *
   FROM article
-  WHERE id = 1
-  ORDER BY created_at;";
+  WHERE id = " . $_GET['id'];
 
 $result = mysqli_query($conn, $sql);
 

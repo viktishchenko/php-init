@@ -58,7 +58,7 @@ if ($result === false) {
                 <?php foreach ($articles as $article) : ?>
                     <li>
                         <article>
-                            <h2><?= $article["title"]; ?></h2>
+                            <h2><a href="s4-single-page-data.php?id=<?= $article['id']; ?>"><?= $article["title"]; ?></a></h2>
                             <p><?= $article["content"]; ?></p>
                         </article>
                     </li>
