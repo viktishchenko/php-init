@@ -47,3 +47,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 ![Alt text](img/denyAccess.png)
 
 [def6]: ../includes/.htaccess
+
+[get data from user (get/post) →][def7]
+
+![Alt text](img/getPostData.png)
+
+[def7]: ../form.php
