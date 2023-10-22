@@ -53,3 +53,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 ![Alt text](img/getPostData.png)
 
 [def7]: ../form.php
+
+[HTML5 form intro →][def8]
+
+![Alt text](img/html5FormIntro.png)
+
+[def8]: ../form.php
