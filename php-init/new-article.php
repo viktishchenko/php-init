@@ -5,6 +5,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require("includes/s6-db-dry.php");
 
     // var_dump($_POST);
+    /* 
+    unreliable option, vulnerable to sql injection
+    $sql = " INSERT INTO article (title, content, created_at)
+             VALUES ('" . $_POST['title'] . "', '"
+        . $_POST['content'] . "', '"
+        . $_POST['created_at'] . "') ";
+
+        SELECT Password FROM user WHERE user = 'myfirst_satrt' LIMIT 1; 
+        → *1A47CBC50AC5B0DECAC1964E2A2C7ASDF3T342
+        → Free Password Hash Cracker
+    */
 
     $sql = " INSERT INTO article (title, content, created_at)
              VALUES ('" . $_POST['title'] . "', '"

@@ -91,3 +91,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 - res
 
 ![Alt text](img/insertMultiple6.png)
+
+- sql inj-on
+
+![Alt text](img/sqlIngection.png)
