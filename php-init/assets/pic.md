@@ -59,3 +59,35 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 ![Alt text](img/html5FormIntro.png)
 
 [def8]: ../form.php
+
+[insert data →](../new-article.php)
+
+![Alt text](img/insertData.png)
+
+- insert spec columns (val = num, order spec col)
+
+![Alt text](img/insertSpecificColumns.png)
+
+![Alt text](img/insertSpecificColumns2.png)
+
+![Alt text](img/insertSpecificColumns3.png)
+
+- insert multiple
+
+![Alt text](img/insertMultiple.png)
+
+![Alt text](img/insertMultiple2.png)
+
+![Alt text](img/insertMultiple3.png)
+
+- e.g.
+
+![Alt text](img/insertMultiple4.png)
+
+- e.g.
+
+![Alt text](img/insertMultiple5.png)
+
+- res
+
+![Alt text](img/insertMultiple6.png)
