@@ -8,4 +8,8 @@ mkdir <dirname>
 New-Item .gitignore
 New-Item README.md
 
+npm i vite
+
 ```
+
+[ The res →](https://viktishchenko.github.io/php-init/html-pr-manage/)
