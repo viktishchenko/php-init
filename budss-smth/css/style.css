@@ -1,14 +1,11 @@
 :root {
-  --color-dark: #000;
-  --color-white: #fff;
-  --color-light: #e2e2e2;
-  --text-color: #000000ad;
-  --wheat-color: #f5deb3;
-  --bg-color: #363636;
-  --link-color: #dc717d;
-  --primary-color: #445b7c;
-  --secondayr-color: #71abfe;
-  --hover-color: #4d4d4d;
+  --text-dark: #000;
+  --text-white: #fff;
+  --bg-color: #181818;
+  --primary-color: #954ced;
+  --additional-yellow: #ffaa4c;
+  --additional-grass: #c1db2f;
+  --additional-lime: #2fdbbc;
 }
 
 /* -------------------------------- 
