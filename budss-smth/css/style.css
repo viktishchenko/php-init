@@ -12,6 +12,68 @@
 }
 
 /* -------------------------------- 
+add fonts
+-------------------------------- */
+
+/* Set up Roboto for old browsers, only regular + bold */
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: Outfit;
+    src: url("../assets/fonts/stwoff/Outfit-Light.woff2");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: Outfit;
+    src: url("../assets/fonts/stwoff/Outfit-Regular.woff2");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Outfit;
+    src: url("../assets/fonts/stwoff/Outfit-Medium.woff2");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: Outfit;
+    src: url("../assets/fonts/stwoff/Outfit-SemiBold.woff2");
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: Outfit;
+    src: url("../assets/fonts/stwoff/Outfit-Bold.woff2");
+    font-weight: 700;
+  }
+
+  body {
+    font-family: Outfit;
+  }
+
+  .super-bold {
+    font-weight: bold;
+  }
+}
+
+/* Set up Roboto for modern browsers, all weights */
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Outfit";
+    src: url("../assets/fonts/Outfit-VariableFont_wght.woff2")
+        format("woff2 supports variations"),
+      url("../assets/fonts/Outfit-VariableFont_wght.woff2")
+        format("woff2-variations");
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+  }
+
+  .super-bold {
+    font-weight: 1000;
+  }
+}
+
+/* -------------------------------- 
 Default style
 -------------------------------- */
 
@@ -27,8 +89,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Outfit", sans-serif;
   font-size: 1.6rem;
   line-height: 2.6rem;
   font-weight: normal;
