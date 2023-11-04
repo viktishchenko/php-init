@@ -16,7 +16,7 @@
     <h1 class="visually-hidden">Budss</h1>
     <div class="header">
       <div class="container header__container">
-        <nav class="header__navigation-secondary">
+        <nav class="header__navigation">
           <ul class="navigation">
             <li class="navigation__item">
               <a class="navigation__link" href="#">for business</a>
@@ -27,7 +27,13 @@
           </ul>
         </nav>
         <div class="header__logo-line">
-          <a href="./assets/image/icons/logo.svg" class="logo"></a>
+          <a href="#">
+            <img src="./assets/image/icons/logo.svg" alt="logo" />
+            <!-- <svg class="logo" width="146" height="24">
+              <title id="catTitle">Pixels, My Super-friendly Cat</title>
+              <use xlink:href="./assets/image/icons/logo.svg"></use>
+            </svg> -->
+          </a>
           <div class="header__button">
             <button class="button colorful-btn">Contact sales</button>
           </div>
@@ -57,16 +63,33 @@
             alt="budss people"
             class="promo__image"
           />
+          <!--  
+            <picture>
+  <source srcset="photo.avif" type="image/avif" />
+  <source srcset="photo.webp" type="image/webp" />
+  <img src="photo.jpg" alt="photo" />
+</picture>
+
+           -->
+          <!-- 
+            <picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+            -->
         </div>
       </section>
       <section class="about">
         <div class="container about__container">
           <h2 class="about__title">About Budss</h2>
           <div class="about__content">
-            <p class="about__subtitle">
-              Payment as a service, powered seamlessly by our
-              <span class="highlight"> network of shoppers </span>
-            </p>
+            <div class="about__subtitle">
+              <span class="highlight__subtitle">
+                Payment as a service, powered seamlessly by our
+                <span class="highlight"> network of shoppers </span>
+              </span>
+            </div>
             <div class="tools__wrapper">
               <div class="tool">
                 <span class="ico ico_star"></span>
@@ -106,21 +129,228 @@
       </section>
       <section class="scrolling-ads">
         <div class="container scrolling-ads__container">
-          <p class="scrolling-text scrolling-right">
-            how budss works
-            <span class="colorful-ads additionaly-color">how budss works</span>
-          </p>
-          <p class="scrolling-text scrolling-left">
-            how budss works
-            <span class="colorful-ads primary-color">how budss works</span>
-          </p>
-          <p class="scrolling-text scrolling-right">
-            how budss works
-            <span class="colorful-ads secondary-color">how budss works</span>
-          </p>
+          <div class="scrolling-ads__body">
+            <p class="scrolling-text scrolling-right">
+              how budss works
+              <span class="colorful-ads additionaly-color"
+                >how budss works</span
+              >
+            </p>
+            <p class="scrolling-text scrolling-left">
+              how budss works
+              <span class="colorful-ads primary-color">how budss works</span>
+            </p>
+            <p class="scrolling-text scrolling-right">
+              how budss works
+              <span class="colorful-ads secondary-color">how budss works</span>
+            </p>
+          </div>
+          <div class="scrolling-ads__footer">
+            <div class="increase-point">
+              <span class="increase-point__number">15%</span>
+              <p class="increase-point____text">Increase in Purchase Amount</p>
+            </div>
+            <div class="increase-point">
+              <span class="increase-point__number">30%</span>
+              <p class="increase-point____text">Growth in Annual Sales</p>
+            </div>
+            <div class="increase-point">
+              <span class="increase-point__number">10%</span>
+              <p class="increase-point____text">Growth in New Customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container features__container">
+          <h3 class="features_title">Why Budss</h3>
+          <div class="features__subtitle">
+            <span class="highlight__subtitle">
+              We Provide Advanced Payment Solutions
+              <span class="highlight">To Grow Your Business</span>
+            </span>
+          </div>
+          <div class="features__card-wrapper">
+            <div class="feature-card">
+              <h5 class="feature-card__title">
+                Turn your customers into loyal influencers
+              </h5>
+              <p class="feature-card__text">
+                Budss helps businesses harness the exponential power of loyal
+                customers for acquisition and retention.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h5 class="feature-card__title">
+                THarness the power of buying in bulk
+              </h5>
+              <p class="feature-card__text">
+                Get at least 2X more sales with Budss Buying Groups. Your
+                customer base will grow exponentially as your customers add
+                their friends & family to your personalized group.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h5 class="feature-card__title">
+                Supercharge Loyalty With Instant Cash Back
+              </h5>
+              <p class="feature-card__text">
+                Budss allows for shoppers to earn immediate cash back at their
+                favorite stores.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h5 class="feature-card__title">
+                Seasoned with AI and Gamification
+              </h5>
+              <p class="feature-card__text">
+                AI programming creates a personalized customer journey, offering
+                recommendations for their next purchase and optimizing rewards
+                for after purchase.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="container offer__container">
+          <div class="offer__grow-wrapper">
+            <div class="get-grow">
+              <sapn class="get-grow__title">Let Your Business Grow</sapn>
+              <div class="offer__button">
+                <button class="button colorful-btn">Contact sales</button>
+              </div>
+            </div>
+          </div>
+          <div class="offer__wrapper">
+            <div class="offer_content">
+              <h2 class="offer__title">Your Brand Awareness Maters</h2>
+              <p class="offer_text">
+                Budss is a husle free solution to put your brand on any digital
+                surface including Instagram, Facebook, Twitter and TikTok
+              </p>
+            </div>
+            <div class="offer__icons">
+              <div class="wavy-ico">
+                <ul class="wavy-ico__list">
+                  <li>
+                    <svg class="wavy-ico__sicial">
+                      <use xlink:href="social-icons.svg#icon-facebook"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="wavy-ico__sicial">
+                      <use xlink:href="social-icons.svg#icon-twitter"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="wavy-ico__sicial">
+                      <use xlink:href="social-icons.svg#icon-instagram"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="wavy-ico__sicial">
+                      <use xlink:href="social-icons.svg#icon-tiktok"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="offer-logos__wrapper">
+            <div class="logo-card">
+              <ul class="logo-card__list">
+                <li class="logo-card__item">
+                  <svg class="logo-card__ico">
+                    <use xlink:href="social-icons.svg#icon-woocommerce"></use>
+                  </svg>
+                </li>
+                <li class="logo-card__item">
+                  <svg class="logo-card__ico">
+                    <use xlink:href="social-icons.svg#icon-shopify"></use>
+                  </svg>
+                </li>
+                <li class="logo-card__item">
+                  <svg class="logo-card__ico">
+                    <use xlink:href="social-icons.svg#icon-square"></use>
+                  </svg>
+                </li>
+                <li class="logo-card__item">
+                  <svg class="logo-card__ico">
+                    <use xlink:href="social-icons.svg#icon-squarespace"></use>
+                  </svg>
+                </li>
+                <li class="logo-card__item">
+                  <svg class="logo-card__ico">
+                    <use xlink:href="social-icons.svg#icon-clover"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__logo-line">
+          <a href="#">
+            <img src="./assets/image/icons/logo.svg" alt="logo" />
+            <!-- <svg class="logo" width="146" height="24">
+                <title id="catTitle">Pixels, My Super-friendly Cat</title>
+                <use xlink:href="./assets/image/icons/logo.svg"></use>
+              </svg> -->
+          </a>
+          <nav class="footer__navigation">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">for business</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">for customers</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__button">
+            <button class="button colorful-btn">Contact sales</button>
+          </div>
+          <div class="footer__buttons">
+            <a
+              href="#"
+              target="_blank"
+              class="market-btn apple-btn"
+              role="button"
+            >
+              <span class="market-btn__subtitle">Download on the</span>
+              <span class="market-btn__title">App Store</span>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="market-btn google-btn"
+              role="button"
+            >
+              <span class="market-btn__subtitle">Download on the</span>
+              <span class="market-btn__title">Google Play</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__info">
+          <span class="footer__info-copyright">
+            © Copyright 2023, All Rights Reserved by Budss
+          </span>
+          <span class="footer__info-polisy">
+            <a href="#">Privacy Policy</a>
+          </span>
+          <span class="footer__info-seller">
+            <a href="#">Terms Of Use - Seller</a>
+          </span>
+          <span class="footer__info-customers">
+            <a href="#">Terms of Use - Sellers & Customers</a>
+          </span>
+        </div>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
