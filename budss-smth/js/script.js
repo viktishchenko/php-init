@@ -1,5 +1,5 @@
 const menuBtn = document.querySelector(".menu__button");
-const menuList = document.querySelector(".menu__list");
+const menuList = document.querySelector(".menu__list-wrapper");
 
 menuBtn.addEventListener("click", () => {
   let expanded = menuBtn.getAttribute("aria-expanded") === "true";
