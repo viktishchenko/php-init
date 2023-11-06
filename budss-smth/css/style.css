@@ -261,12 +261,12 @@ body {
 .header__logo-line {
   display: flex;
   align-items: center;
-  padding: 1.1rem 0;
+  padding: 0.7rem 0;
   justify-content: space-between;
 }
 
 .logo {
-  margin-left: 6rem;
+  margin-left: 5.6rem;
 }
 
 .logo svg {
@@ -275,7 +275,7 @@ body {
 }
 
 .header__button {
-  margin-right: 6rem;
+  margin-right: 5.6rem;
 }
 
 .button {
@@ -317,12 +317,18 @@ body {
   display: none;
 }
 
+@media (max-width: 780px) {
+  .header__button {
+    margin-right: 3rem;
+  }
+}
+
 @media (max-width: 480px) {
   .header__logo-line {
-    margin: 1.5rem 0;
+    margin: 0.9rem 0;
   }
   .logo {
-    margin-left: 0;
+    margin-left: 1.3rem;
   }
   .logo svg {
     width: 12.4rem;
@@ -399,7 +405,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 11.1rem;
+  padding-left: 11.1rem;
+}
+
+.promo__content {
+  margin-bottom: 12rem;
 }
 
 .promo__title {
@@ -419,9 +429,7 @@ body {
 @media (max-width: 1200px) {
   .promo__container {
     flex-wrap: wrap;
-  }
-  .promo__content {
-    margin-bottom: 6rem;
+    padding-right: 11.1rem;
   }
 }
 
@@ -437,9 +445,16 @@ body {
     font-size: 1.6rem;
     padding-bottom: 4rem;
   }
+
+  .promo__image {
+    margin-left: 3rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .promo {
+    padding: 5rem 0 10rem;
+  }
   .promo__button .button {
     width: 100%;
   }
