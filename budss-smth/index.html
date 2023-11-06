@@ -14,8 +14,8 @@
   </head>
   <body>
     <h1 class="visually-hidden">Budss</h1>
-    <div class="header">
-      <div class="container header__container">
+    <div class="up-header">
+      <div class="container">
         <nav class="header__navigation navigation">
           <ul role="list" class="navigation__list">
             <li class="navigation__item">
@@ -26,9 +26,13 @@
             </li>
           </ul>
         </nav>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container header__container">
         <div class="header__logo-line">
           <a class="logo" href="#">
-            <svg width="155" height="49">
+            <svg>
               <title id="catTitle">Pixels, My Super-friendly Cat</title>
               <use xlink:href="./assets/image/icons/sprite.svg#logo"></use>
             </svg>
@@ -41,19 +45,18 @@
               class="menu__button"
               type="button"
               aria-expanded="false"
-              aria-controls="menu__list"
-            >
-              <svg class="menu__icon" aria-hidden="true" width="40" height="40">
-                <use
-                  class="menu__icon-menu"
-                  href="./assets/image/icons/sprite.svg#burger"
-                ></use>
-                <use
-                  class="menu__icon-menu"
-                  href="./assets/image/icons/sprite.svg#cross"
-                ></use>
-              </svg>
-            </button>
+              aria-controls="menu__list-wrapper"
+            ></button>
+            <div class="menu__list-wrapper">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link menu__link--current">1 point</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link menu__link--inactive">2 point</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
