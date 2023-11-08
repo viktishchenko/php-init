@@ -638,3 +638,59 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+/* -------------------------------- 
+  Ыcrolling-ads section
+-------------------------------- */
+
+.scrolling-ads {
+}
+.container {
+}
+.scrolling-ads__container {
+}
+.scrolling-ads__body {
+  overflow: hidden;
+}
+.scrolling-text {
+  font-size: 12.8rem;
+  font-weight: var(--fw-bold);
+  line-height: 106%;
+  white-space: nowrap;
+  text-shadow: -1px -1px 0 var(--clr-grayscale-02),
+    0 -1px 0 var(--clr-grayscale-02), 1px -1px 0 var(--clr-grayscale-02),
+    1px 0 0 var(--clr-grayscale-02), 1px 1px 0 var(--clr-grayscale-02),
+    0 1px 0 var(--clr-grayscale-02), -1px 1px 0 var(--clr-grayscale-02),
+    -1px 0 0 var(--clr-grayscale-02);
+  /* -webkit-text-stroke: 1px var(--clr-grayscale-02); */
+  text-transform: capitalize;
+  color: var(--clr-grayscale-01);
+}
+.scrolling-right {
+}
+.colorful-ads {
+}
+.additionaly-color {
+  color: var(--clr-secondary-02);
+  text-shadow: none;
+}
+.scrolling-left {
+}
+.primary-color {
+  color: var(--clr-primary-01);
+  text-shadow: none;
+}
+.secondary-color {
+  color: var(--clr-secondary-01);
+  text-shadow: none;
+}
+.scrolling-ads__footer {
+}
+.increase-point {
+}
+.increase-point__number {
+}
+.increase-point__text {
+}
+.text {
+}
