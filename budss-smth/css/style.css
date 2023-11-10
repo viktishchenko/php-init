@@ -655,8 +655,10 @@ body {
 }
 
 .scrolling-ads__body {
+  position: relative;
   overflow: hidden;
   padding: 14.4rem 0;
+  margin: 0;
 }
 
 .scrolling-text {
@@ -675,9 +677,18 @@ body {
   margin-bottom: 7rem;
   z-index: -1;
   position: relative;
+  width: 423rem;
 }
+
+.scrolling-text:nth-child(3) {
+  padding-left: 28rem;
+}
+
 .scrolling-right {
+  animation: scrollText 33s infinite forwards linear;
+  display: inline-block;
 }
+
 .colorful-ads {
 }
 
@@ -687,6 +698,8 @@ body {
 }
 
 .scrolling-left {
+  animation: scrollText 33s infinite reverse linear;
+  display: inline-block;
 }
 .primary-color {
   color: var(--clr-primary-02);
@@ -695,7 +708,6 @@ body {
 .secondary-color {
   color: var(--clr-secondary-01);
   text-shadow: none;
-  padding: 4.6rem 6.8rem;
 }
 
 .scrolling-ads__footer {
@@ -742,6 +754,7 @@ body {
   .scrolling-text {
     font-size: 4.8rem;
     margin-bottom: 9.3rem;
+    width: 158.5rem;
   }
   .increase-list {
     grid-template-columns: 1fr;
@@ -761,7 +774,7 @@ body {
     display: flex;
   }
 }
-
+/* 
 @keyframes scrollText {
   from {
     transform: translateX(0%);
@@ -769,4 +782,4 @@ body {
   to {
     transform: translateX(-50%);
   }
-}
+} */
