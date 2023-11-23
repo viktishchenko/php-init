@@ -274,6 +274,7 @@ p[data-width="wide"] {
 
   .mobile-nav-toggle[aria-expanded="true"] {
     background-image: url(images/icon-close.svg);
+    z-index: 9999;
   }
 
   .mobile-nav-toggle .icon-close {
